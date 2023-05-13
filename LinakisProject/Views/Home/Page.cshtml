@@ -1,0 +1,27 @@
+﻿@using LinakisProject.Models
+
+@model TitleViewModel
+
+<h1> @Model.Name</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Source</th>
+            <th scope="col">Published Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Articles)
+        {
+            <tr>
+                <td><a href="@item.Url" target="_blank">@item.Title</a></td>
+                <td>@item.SourceName</td>
+                <td>@item.PublishedDate</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

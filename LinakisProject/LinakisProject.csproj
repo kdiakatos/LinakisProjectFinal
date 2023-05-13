@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LinakisProject.Business\LinakisProject.Business.csproj" />
+    <ProjectReference Include="..\LinakisProject.Repository\LinakisProject.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
